@@ -1,0 +1,107 @@
+body {
+    font-family: specimen, sans-serif;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+  }
+  h1 {
+    display: flex;
+    justify-content: center;
+  }
+  header {
+    background-color: rgb(197, 195, 242);
+  }
+  input {
+    display: block;
+    margin: 0 0 12 0;
+    transition: background 0.2s ease-in-out;
+  }
+  
+  input:focus {
+    background: rgb(197, 195, 242);
+  }
+  
+  .register-wrapper {
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+  }
+  button {
+    background: none;
+    color: grey;
+    border-radius: 2px;
+    box-sizing: border-box;
+    padding: 1px 4px;
+    margin: 4px;
+    transition: all 0.2s ease-out;
+  }
+  button:hover,
+  button:focus {
+    background: rgb(197, 195, 242);
+    transform: scale 0.2s;
+  }
+  .buttoncontainer {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0.5em;
+  }
+  @media only screen and (min-width: 320px) {
+    .input {
+      flex-direction: row;
+    }
+    .register-wrapper {
+      width: 100px;
+      min-width: 100px;
+      height: 100px;
+      margin-left: 10px;
+    }
+    .button {
+      text-align: left;
+    }
+  }
+  @media only screen and (min-width: 540px) {
+    header {
+      height: 50px;
+    }
+    .input {
+      flex-direction: row;
+    }
+    .register-wrapper {
+      width: 100px;
+      min-width: 100px;
+      height: 100px;
+      margin-left: 10px;
+    }
+    .button {
+      text-align: left;
+    }
+  }
+  @media only screen and (min-width: 1024px) {
+    header {
+      height: 60px;
+    }
+    .input {
+      flex-direction: column;
+    }
+    .register-wrapper {
+      margin-top: 10px;
+    }
+    .button {
+      text-align: center;
+    }
+  }
+  .office {
+    position: absolute;
+    height: 10%;
+    width: 10%;
+    animation: move 2s;
+    animation-iteration-count: 3;
+  }
+  @keyframes move {
+    from {
+      left: 0%;
+    }
+    to {
+      left: 100%;
+    }
+  }

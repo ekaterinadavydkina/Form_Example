@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HW9</title>
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Nerko+One" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="shortcut icon"
+      href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA/4QAAMRuEgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAERAAAAAAAAAREAAAAAAAEREREAAAAAAAICAAAAAAAAIgIgAAAAAAAgACAAAAAAAiAAIgAAAAACAAACAAAAAAIAAAIAAAAAIgAAAiAAAAAgAAAAIAAAAiAAAAAiAAACAAAAAAIAAAIAAAAAAgAAAAAAAAAAAAAAAAAAAAAAD8fwAA/H8AAPAfAAD9fwAA+T8AAPu/AADznwAA998AAPffAADnzwAA7+8AAM/nAADf9wAA3/cAAP//AAD//wAA"
+      type="image/x-icon"
+    />
+  </head>
+
+  <body>
+    <header>
+      <h1 class="main-label">Register</h1>
+    </header>
+    <div class="register-wrapper">
+      <form method="post" action="/login">
+        <label>
+          <span>Введите логин:</span>
+          <input
+            type="email"
+            name="login"
+            required
+            placeholder="Ваша почта"
+            minlength="6"
+          />
+        </label>
+
+        <label>
+          <span>Введите пароль:</span>
+          <input
+            type="password"
+            name="password"
+            required
+            placeholder="Ваш пароль"
+            maxlength="6"
+          />
+        </label>
+
+        <button type="submit">Войти</button>
+      </form>
+    </div>
+
+    <form method="get">
+      <label>
+        <span>Выберите язык:</span>
+        <select name="select-one-of" style="width: 200px">
+          <option>English</option>
+          <option>Russian</option>
+        </select>
+      </label>
+
+      <button type="submit">Отправить</button>
+    </form>
+    <div>
+      <img
+        src="free-animated-icon-checklist-6416398.gif"
+        alt="альтернативный текст"
+        class="office"
+      />
+    </div>
+  </body>
+</html>
